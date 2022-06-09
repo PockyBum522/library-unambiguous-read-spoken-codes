@@ -27,4 +27,5 @@ var result = Generator.SplitCode(TestCodeTwo);
 result.Should().Be("GXHY DHWT TQPY RY4Q WQLC FKLH 7G");
 
 var result = Generator.SplitCode(TestCodeTwo,3,"-");
-result.Should().Be("GXH-YDH-WTT-QPY-RY4-QWQ-LCF-KLH-7G");```
+result.Should().Be("GXH-YDH-WTT-QPY-RY4-QWQ-LCF-KLH-7G");
+```
