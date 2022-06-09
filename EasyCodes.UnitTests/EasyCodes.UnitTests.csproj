@@ -78,6 +78,7 @@
     <ItemGroup>
         <Compile Include="GeneratorTests.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
+        <Compile Include="SplitCodeTests.cs" />
     </ItemGroup>
     <ItemGroup>
       <ProjectReference Include="..\EasyCodes\EasyCodes.csproj">

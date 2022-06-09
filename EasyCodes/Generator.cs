@@ -30,6 +30,23 @@ namespace EasyCodes
             return returnCode;
         }
 
+        public static string SplitCode(string code, int splitEveryChars = 4, string splitString = " ")
+        {
+            if (code.Length <= splitEveryChars)
+                return code;
+
+            var i = splitEveryChars;
+            
+            while (i < code.Length)
+            {
+                code = code.Insert(i, splitString);
+
+                i += splitEveryChars + splitString.Length;
+            }
+
+            return code;
+        }
+        
         private static string BuildFullCharacterSet(CharacterSets characterSet)
         {
             if (characterSet == CharacterSets.LettersOnly)
