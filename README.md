@@ -20,7 +20,8 @@ OUTPUT: PLGUAUPV
 
 ## Also with SplitCodes() method to make codes more easily readable:  
 
-```var TestCodeTwo => "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+```  
+var TestCodeTwo => "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         
 var result = Generator.SplitCode(TestCodeTwo);
 result.Should().Be("ABCD EFGH IJKL MNOP QRST UVWX YZ");
