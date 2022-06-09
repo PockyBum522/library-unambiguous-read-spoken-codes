@@ -7,14 +7,14 @@ namespace EasyCodes.UnitTests
     public class SplitCodeTests
     {
         private string TestCodeOne => "X";
-        private string TestCodeTwo => "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        private string TestCodeTwo => "GXHYDHWTTQPYRY4QWQLCFKLH7G";
         
         [Test]
         public void SplitCode_WhenGivenNoValues_ShouldReturnCodeSplitEveryFourCharacters()
         {
             var result = Generator.SplitCode(TestCodeTwo);
 
-            result.Should().Be("ABCD EFGH IJKL MNOP QRST UVWX YZ");
+            result.Should().Be("GXHY DHWT TQPY RY4Q WQLC FKLH 7G");
         }
         
         [Test]
@@ -22,7 +22,7 @@ namespace EasyCodes.UnitTests
         {
             var result = Generator.SplitCode(TestCodeTwo,3,"-");
 
-            result.Should().Be("ABC-DEF-GHI-JKL-MNO-PQR-STU-VWX-YZ");
+            result.Should().Be("GXH-YDH-WTT-QPY-RY4-QWQ-LCF-KLH-7G");
         }
         
         [Test]
@@ -38,7 +38,7 @@ namespace EasyCodes.UnitTests
         {
             var result = Generator.SplitCode(TestCodeTwo, 5, "-=-");
 
-            result.Should().Be("ABCDE-=-FGHIJ-=-KLMNO-=-PQRST-=-UVWXY-=-Z");
+            result.Should().Be("GXHYD-=-HWTTQ-=-PYRY4-=-QWQLC-=-FKLH7-=-G");
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using FluentAssertions;
+﻿using System;
+using FluentAssertions;
 using NUnit.Framework;
 
 namespace EasyCodes.UnitTests
@@ -57,9 +58,9 @@ namespace EasyCodes.UnitTests
         [Test]
         public void GetCode_WhenGivenLengthOne_ShouldReturnCodeOfLengthOne()
         {
-            var result = Generator.GetCode(1);
+            var result = Generator.GetCode(26);
 
-            result.Length.Should().Be(1);
+            result.Length.Should().Be(26);
         }
     }
 }
