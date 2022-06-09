@@ -2,6 +2,21 @@
 
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
+        <PackageId>EasyCodes</PackageId>
+        <Title>Easy-Readable-Speakable-Codes</Title>
+        <Authors>PockyBum522</Authors>
+        <Description>Unambiguous code generation for unique ID codes that need to be relayed in some way, either read or spoken without similar sounding or looking characters. I.E. No O and 0 (Zero)</Description>
+        <Copyright>2022</Copyright>
+        <PackageProjectUrl>https://github.com/PockyBum522/Easy-Readable-Speakable-Codes</PackageProjectUrl>
+        <PackageLicense>https://opensource.org/licenses/MIT</PackageLicense>
+        <RepositoryUrl>https://github.com/PockyBum522/Easy-Readable-Speakable-Codes</RepositoryUrl>
+        <PackageTags>code codes unique id identification readable speakable easycodes easycode</PackageTags>
+        <RootNamespace>EasyCodes</RootNamespace>
+        <PackageVersion>1.0.0</PackageVersion>
+        <AssemblyVersion>1.0.0</AssemblyVersion>
+        <FileVersion>1.0.0</FileVersion>
+        <Configurations>Debug;Release</Configurations>
+        <Platforms>AnyCPU</Platforms>
     </PropertyGroup>
 
     <ItemGroup>
